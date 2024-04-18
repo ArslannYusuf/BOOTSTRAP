@@ -12,8 +12,10 @@
     />
   </head>
   <body>
-    <!-- Grid ile flex kullanilarak hazirlanmis 12lik izgara yapisi ile gelir, 
-        responsive yapidadir, ROW class'i flex ozelligine sahiptir -->
+    <!--
+        ! Grid ile flex kullanilarak hazirlanmis 12lik izgara yapisi ile gelir, 
+        ! responsive yapidadir, ROW class'i flex ozelligine sahiptir 
+    -->
 
     <h1 class="text-center">Hello, world!</h1>
 
@@ -28,10 +30,32 @@
         <div class="col bg-info">Python</div>
         <div class="col bg-light">C#</div>
         <div class="col bg-dark text-danger">PHP</div>
-        <div class="col bg-white">SQL</div>
-        <div class="col bg-light text-warning">Ruby</div>
+        <div class="col bg-body-secondary">SQL</div>
+        <div class="col bg-info text-warning">Ruby</div>
         <div class="col bg-dark text-success">Perl</div>
-        <div class="col bg-white">PHP</div>
+      </div>
+    </div>
+
+    <div class="container-fluid text-center mt-5">
+      <!-- ! container-fluid class'i ile tam ekran olusturulabilir -->
+      <div class="row">
+        <div class="col-4 bg-dark-subtle">Ocak</div>
+        <!--! col-5 seklinde kullanim ile hücre birlestirme yapar (12'lik hucre) -->
+        <div class="col-8 bg-danger-subtle">Mart</div>
+        <div class="col-auto bg-primary-subtle">Mayıs</div>
+        <!--! col-auto ile inline element ozelliklerini alir -->
+        <div class="col-auto bg-success text-light">Eylül</div>
+        <div class="col-auto bg-success text-light">Eylül</div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-5 bg-danger p-3">Pazartesi</div>
+        <div class="col bg-primary p-3">Salı</div>
+        <div class="col bg-dark-subtle p-3">Çarşamba</div>
+        <div class="col bg-info p-3">Perşembe</div>
+        <!--  col-'x' indeksi belirtilmez ise div icinde otomatik olarak 12'ye tamamalar -->
       </div>
     </div>
 
