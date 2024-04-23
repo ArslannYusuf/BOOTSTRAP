@@ -19,42 +19,216 @@
     <!-- 
         form-control class'i ile inputun kenarlari oval hale geliyor 
 
-
-
-
+       form classlari ile form elemntlerini kullanabilirim
      -->
+
+    <div class="container d-flex justify-content-center align-items-center">
+    <form action="" class="mx-5 auto">
+      <div class="mt-3">
+        <label for="lbl-1" class="form-label">Fullname</label>
+        <input
+          type="text"
+          class="form-control"
+          id="lbl-1"
+          placeholder="Enter your fullname "
+          required
+        />
+      </div>
+
+      <div class="mt-3">
+        <label for="lbl-2" class="form-label">Mail</label>
+        <input
+          type="email"
+          class="form-control"
+          id="lbl-2"
+          placeholder="name@example.com"
+          required
+        />
+      </div>
+
+      <div class="mt-3">
+        <label for="lbl-3" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="lbl-3"
+          placeholder="Enter your password"
+          required
+        />
+      </div>
+
+      <div class="mt-3">
+        <label for="lbl-4" class="form-label">City</label>
+        <select name="select" id="lbl-4" class="form-select">
+          <option value="" disabled>Choose your city</option>
+          <option value="istanbul">Istanbul</option>
+          <option value="ankara">Ankara</option>
+          <option value="izmir">Izmir</option>
+          <option value="bursa">Bursa</option>
+        </select>
+      </div>
+
+
+      <!-- form-check -->
+      <div class="form-check mt-4">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+          Default checkbox
+        </label>
+      </div>
+
+
+      <!-- btn-check -->
+      <div
+        class="btn-group mt-4"
+        role="group"
+        aria-label="Basic checkbox toggle button group"
+      >
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btncheck1"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-secondary" for="btncheck1"
+          >Checkbox 1</label
+        >
+
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btncheck2"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-danger" for="btncheck2">Checkbox 2</label>
+
+        <input
+          type="checkbox"
+          class="btn-check"
+          id="btncheck3"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-success" for="btncheck3"
+          >Checkbox 3</label
+        >
+      </div>
+
+
+      <!-- btn-radio -->
+      <div
+        class="btn-group mt-3"
+        role="group"
+        aria-label="Basic radio toggle button group"
+      >
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio1"
+          autocomplete="off"
+          checked
+        />
+        <label class="btn btn-outline-primary" for="btnradio1">Male</label>
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio2"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btnradio2">Female</label>
+      </div>
+
+
+      <!-- form-range -->
+      <div class="mt-3">
+        <label for="customRange1" class="form-label">Example range</label>
+        <input type="range" class="form-range" id="customRange1" />
+      </div>
+    </form>
+</div>
+
+    <!-- input group -->
+    <div class="input-group mb-3 d-flex justify-content-center align-items-center ">
+      <span class="input-group-text" id="basic-addon1">@</span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Username"
+        aria-label="Username"
+        aria-describedby="basic-addon1"
+      />
+    </div>
+
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Recipient's username"
+        aria-label="Recipient's username"
+        aria-describedby="basic-addon2"
+      />
+      <span class="input-group-text" id="basic-addon2">@example.com</span>
+    </div>
+
+    <div class="mb-3">
+      <label for="basic-url" class="form-label">Your vanity URL</label>
+      <div class="input-group">
+        <span class="input-group-text" id="basic-addon3"
+          >https://example.com/users/</span
+        >
+        <input
+          type="text"
+          class="form-control"
+          id="basic-url"
+          aria-describedby="basic-addon3 basic-addon4"
+        />
+      </div>
+      <div class="form-text" id="basic-addon4">
+        Example help text goes outside the input group.
+      </div>
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text">$</span>
+      <input
+        type="text"
+        class="form-control"
+        aria-label="Amount (to the nearest dollar)"
+      />
+      <span class="input-group-text">.00</span>
+    </div>
+
+    <div class="input-group mb-3">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Username"
+        aria-label="Username"
+      />
+      <span class="input-group-text">@</span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Server"
+        aria-label="Server"
+      />
+    </div>
+
+    <div class="input-group">
+      <span class="input-group-text">With textarea</span>
+      <textarea class="form-control" aria-label="With textarea"></textarea>
+    </div>
+
+
+
     
-
-     <form action="" class="mx-5 auto">
-
-        <div class="mt-3">
-            <label for="lbl-1" class="form-label"   >Fullname</label>
-            <input type="text" class="form-control" id="lbl-1" placeholder = "Enter your fullname " required>
-        </div>
-
-         <div class="mt-3">
-            <label for="lbl-2" class="form-label"   >Mail</label>
-            <input type="email" class="form-control" id="lbl-2" placeholder = "name@example.com" required>
-        </div>
-
-        <div class="mt-3">
-            <label for="lbl-3" class="form-label"   >Password</label>
-            <input type="password" class="form-control" id="lbl-3" placeholder = "Enter your password" required>
-        </div>
-
-        <div class="mt-3">
-            <label for="lbl-4" class="form-label"   >City</label>
-            <select name="select" id="lbl-4"class="form-select">
-                <option value="" disabled>Choose your city</option>
-                <option value="istanbul">Istanbul</option>
-                <option value="ankara">Ankara</option>
-                <option value="izmir">Izmir</option>
-                <option value="bursa">Bursa</option>
-            </select>
-        </div>
-
-     </form>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
